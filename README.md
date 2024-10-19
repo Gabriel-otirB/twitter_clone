@@ -1,8 +1,8 @@
-# Twitter Clone
+# Twitter Clone v1.1.0
 
 Bem-vindo ao projeto **Twitter Clone**! Este é um clone da antiga rede social Twitter, desenvolvido utilizando PHP e JavaScript, seguindo o padrão MVC (Model-View-Controller). O objetivo deste projeto é fornecer uma compreensão básica de como funcionam aplicações web dinâmicas.
 
-https://github.com/user-attachments/assets/eb6fe0f3-9a1e-4150-844f-9701c898dcff
+https://github.com/user-attachments/assets/7b3ba79c-de25-488b-9aed-fc4736bbebf6
 
 ## Funcionalidades
 
@@ -10,6 +10,7 @@ https://github.com/user-attachments/assets/eb6fe0f3-9a1e-4150-844f-9701c898dcff
 - Login e autenticação
 - Publicação de tweets
 - Feed de tweets
+- **Novo!** Feed com registros paginados (Adicionado na versão 1.1.0)
 
 ## Requisitos
 
