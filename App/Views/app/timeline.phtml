@@ -35,17 +35,20 @@
 
 						<div class="col">
 							<span class="perfilPainelItem">Tweets</span><br />
-							<span class="perfilPainelItemValor"><?php echo $this->view->total_tweets['total_tweets']; ?></span>
+							<span
+								class="perfilPainelItemValor"><?php echo $this->view->total_tweets['total_tweets']; ?></span>
 						</div>
 
 						<div class="col">
 							<span class="perfilPainelItem">Seguindo</span><br />
-							<span class="perfilPainelItemValor"><?php echo $this->view->total_seguindo['total_seguindo']; ?></span>
+							<span
+								class="perfilPainelItemValor"><?php echo $this->view->total_seguindo['total_seguindo']; ?></span>
 						</div>
 
 						<div class="col">
 							<span class="perfilPainelItem">Seguidores</span><br />
-							<span class="perfilPainelItemValor"><?php echo $this->view->total_seguidores['total_seguidores']; ?></span>
+							<span
+								class="perfilPainelItemValor"><?php echo $this->view->total_seguidores['total_seguidores']; ?></span>
 						</div>
 
 					</div>
@@ -99,6 +102,25 @@
 				</div>
 			<?php } ?>
 
+			<div class="row mt-5">
+				<nav aria-label="...">
+					<ul class="pagination">
+						<li class="page-item">
+							<a class="page-link" href="?pagina=1" tabindex="-1">Primeira</a>
+						</li>
+						
+						<?php for($i = 1; $i <= $this->view->total_de_paginas; $i++) { ?>
+							<li class="page-item <?php echo $this->view->pagina_ativa == $i ? 'active' : '' ?>">
+								<a class="page-link" href="?pagina=<?php echo $i ?>"><?php echo $i ?></a>
+							</li>
+						<?php } ?>
+
+						<li class="page-item">
+							<a class="page-link" href="?pagina=<?php echo $this->view->total_de_paginas ?>">Última </a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 
 		</div>
 

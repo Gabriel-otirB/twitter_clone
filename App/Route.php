@@ -10,19 +10,19 @@ class Route extends Bootstrap {
 
 		$routes['home'] = array(
 			'route' => '/',
-			'controller' => 'indexController',
+			'controller' => 'IndexController',
 			'action' => 'index'
 		);
 
 		$routes['inscreverse'] = array(
 			'route' => '/inscreverse',
-			'controller' => 'indexController',
+			'controller' => 'IndexController',
 			'action' => 'inscreverse'
 		);
 
 		$routes['registrar'] = array(
 			'route' => '/registrar',
-			'controller' => 'indexController',
+			'controller' => 'IndexController',
 			'action' => 'registrar'
 		);
 
